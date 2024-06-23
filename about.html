@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-container {
+            max-width: 1400px; /* Adjust maximum width */
+            margin: 50px auto; /* Center the container with some top margin */
+            display: flex;
+            justify-content: center; /* Center the cards horizontally */
+            flex-wrap: wrap; /* Allow cards to wrap to the next line */
+        }
+        .profile-card {
+            flex: 0 0 calc(20% - 20px); /* Each card takes up 20% width with some margin */
+            margin: 10px; /* Add space between cards */
+            padding: 20px; /* Increased padding */
+            border: 3px solid #ddd; /* Increased border */
+            border-radius: 20px; /* Increased border radius */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced box shadow */
+            text-align: center;
+            transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+        }
+        .profile-card:hover {
+            transform: translateY(-10px); /* Lift the card on hover */
+        }
+        .profile-image {
+            width: 180px; /* Adjusted image size */
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .text-box {
+            max-width: 1000px; /* Align with profile container */
+            padding: 30px;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-container">
+    <div class="profile-card">
+        <img src="about1.jpeg" class="profile-image" alt="Sofiya">
+        <h5><b>Sofiya</b></h5>
+        <p><u><b>Coder</b></u><br>Providing expert guidance and troubleshooting in software development across various languages and frameworks.</p>
+    </div>
+    <div class="profile-card">
+        <img src="about2.jpeg" class="profile-image" alt="Kiran">
+        <h5><b>Kiran</b></h5>
+        <p><u><b>Media Content Curator</b></u><br>Gathering and analyzing multimedia content from diverse sources for comprehensive insights and reporting.</p>
+    </div>
+    <div class="profile-card">
+        <img src="about3.jpeg" class="profile-image" alt="Lalith">
+        <h5><b>Lalith</b></h5>
+        <p><u><b>Coder</b></u><br>Designing and implementing software solutions using programming languages to meet specific project requirements.</p>
+    </div>
+    <div class="profile-card">
+        <img src="about4.jpeg" class="profile-image" alt="Shreya">
+        <h5><b>Shreya</b></h5>
+        <p><u><b>UI/UX Layout Designer</b></u><br>A digital product designer researches, wireframes, and prototypes intuitive interfaces that enhance usability and engagement, meeting user and business goals.</p>
+    </div>
+    <div class="profile-card">
+        <img src="about5.jpeg" class="profile-image" alt="Afzal">
+        <h5><b>Afzal</b></h5>
+        <p><u><b>Scholarship Analyst</b></u><br> Researching and compiling data on scholarships, grants, and financial aid opportunities to support educational and career pursuits.</p>
+    </div>
+</div>
+
+<div class="text-box">
+    <h5>Description about website</h5>
+    <p>This website, hosted on GitHub, was built using basic HTML, CSS, JavaScript, Bootstrap, and custom snippets. HTML was used for structuring content, while CSS provided styling for a responsive layout. JavaScript added interactive elements, enhancing user engagement. Bootstrap facilitated rapid development with its grid system and pre-styled components. Custom snippets were employed to add specific features and optimize functionality. Hosted on GitHub Pages, the site benefits from easy deployment and version control through Git, ensuring seamless updates and collaborative development.</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

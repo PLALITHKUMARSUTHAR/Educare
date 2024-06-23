@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+        body {
+            padding: 20px; /* Padding around the entire body to add space from the screen edges */
+        }
+
+        h1 {
+            margin-left: 20px; /* Margin for the headings to add space from the left edge */
+        }
+
+       .video-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three videos per row */
+            gap: 10px; /* Add a gap between grid columns and rows */
+            margin-top: 20px; /* Margin top for spacing between topics */
+            padding: 20px; /* Added padding to create space from the margin */
+        }
+
+       .video-item {
+            cursor: pointer;
+            text-align: center; /* Center the text below the thumbnail */
+            padding: 10px; /* Padding inside each video-item to create space */
+        }
+
+        .video-thumbnail {
+    width: 100%; /* Ensure the thumbnail occupies the full width of its container */
+    max-width: 100%; /* Limit the maximum width of the thumbnail to prevent overflow */
+    height: 300px; /* Set a fixed height for the thumbnail, doubled from 150px */
+    object-fit: cover; /* Maintain aspect ratio while covering the thumbnail container */
+}
+
+iframe {
+    width: 100%; /* Ensure the iframe occupies the full width of its container */
+    height: 300px; /* Set a fixed height for the iframe, doubled from 150px */
+}
+
+        @media (max-width: 1000px) {
+          .video-container {
+                grid-template-columns: repeat(2, 1fr); /* Two videos per row on smaller screens */
+            }
+        }
+
+        @media (max-width: 600px) {
+          .video-container {
+                grid-template-columns: repeat(1, 1fr); /* One video per row on smallest screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1><u>Maths Videos</u></h1>
+    <h1><u>Introduction to Fractions and Decimals</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/tpBvbuUZtt0" title="Introduction to Fractions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Part 1</h4>
+        </div>
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/SYH3vuMZyPg" title="Introduction to Decimals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Part 2</h4>
+        </div>
+        <div class="video-item">
+            <!-- Add a third video item here -->
+        </div>
+    </div>
+
+    <h1><u>Rational Numbers</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/V4RoSBZheMM" title="Rational Numbers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Rational Numbers</h4>
+        </div>
+        <div class="video-item">
+            <!-- Add a second video item here -->
+        </div>
+        <div class="video-item">
+            <!-- Add a third video item here -->
+        </div>
+    </div>
+
+    <h1><u>Perimeter and Area</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/PUU_UvvSKPU" title="Introduction+polygons" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Introduction+Squares&Rectangles</h4>
+        </div>
+        <div class="video-item">
+            <!-- Add a second video item here -->
+        </div>
+        <div class="video-item">
+            <!-- Add a third video item here -->
+        </div>
+    </div>
+
+    <h1><u>Algebraic Expressions</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/8xe0mpASlwI" title="Part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Part 1</h4>
+        </div>
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/TPvsA1Fxe9o" title="Part 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Part 2</h4>
+        </div>
+        <div class="video-item">
+            <!-- Add a third video item here -->
+        </div>
+    </div>
+</body>
+</html>

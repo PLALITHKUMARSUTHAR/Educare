@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+        body {
+            padding: 20px; /* Padding around the entire body to add space from the screen edges */
+        }
+
+        h1 {
+            margin-left: 20px; /* Margin for the headings to add space from the left edge */
+        }
+
+       .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 20px), 1fr)); /* Three videos per row */
+            gap: 20px; /* Gap between the video items */
+            margin-top: 20px; /* Margin top for spacing between topics */
+        }
+
+       .video-item {
+            cursor: pointer;
+            text-align: center; /* Center the text below the thumbnail */
+            margin-bottom: 20px; /* Bottom margin for spacing between rows */
+            padding: 10px; /* Padding inside each video-item to create space */
+        }
+
+       .video-thumbnail {
+            width: 100%; /* Ensure the thumbnail occupies the full width of its container */
+            max-width: 100%; /* Limit the maximum width of the thumbnail to prevent overflow */
+            height: auto; /* Automatically adjust height based on the width to maintain aspect ratio */
+            max-height: 150px; /* Limit the maximum height of the thumbnail */
+            object-fit: cover; /* Maintain aspect ratio while covering the thumbnail container */
+        }
+
+        @media (max-width: 1000px) {
+           .video-container {
+                grid-template-columns: repeat(auto-fill, minmax(calc(50% - 20px), 1fr)); /* Two videos per row on smaller screens */
+            }
+        }
+
+        @media (max-width: 600px) {
+           .video-container {
+                grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* One video per row on smallest screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1><u>Science Videos</u></h1>
+    <h1><u>Chapter 1: Nutrition in plants</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HodWVUw2lt4" title="Chapter 1: Nutrition in plants" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Chapter 1: Nutrition in plants</h4>
+        </div>
+    </div>
+
+    <h1><u>Chapter 2: Nutrition in animals</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ROHZCQa2-HE" title="Chapter 2: Nutrition in animals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Chapter 2: Nutrition in animals</h4>
+        </div>
+    </div>
+
+    <h1><u>Chapter 3: Heat</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RuwWZYzIT2I" title="Chapter 3: Heat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Chapter 3: Heat</h4>
+        </div>
+    </div>
+
+    <h1><u>Chapter 4: Acids, Bases and Salts</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe width="560"height="315" src="https://www.youtube.com/embed/mEz2_43cWCY" title="Chapter 4: Acids, Bases and Salts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Chapter 4: Acids, Bases and Salts</h4>
+        </div>
+    </div>
+
+    <h1><u>Chapter 5: Physical and Chemical Process</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QnyJgI5jfQU" title="Chapter 5: Physical and Chemical Process" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Chapter 5: Physical and Chemical Process</h4>
+        </div>
+    </div>
+
+    <h1><u>Chapter 6: Respiration in Organisms</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jWmjVy4_fkQ" title="Chapter 6: Respiration in Organisms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Chapter 6: Respiration in Organisms</h4>
+        </div>
+    </div>
+
+    <h1><u>Chapter 7: Transportation in Animals and Plants</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/J-064O_WUkQ" title="Chapter 7: Transportation in Animals and Plants" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Chapter 7: Transportation in Animals and Plants</h4>
+        </div>
+    </div>
+
+    <h1><u>Chapter 8: Reproduction in Plants</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-_IVXJ7GlxY" title="Chapter 8: Reproduction in Plants" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Chapter 8: Reproduction in Plants</h4>
+        </div>
+    </div>
+
+    <h1><u>Chapter 9: Motion and Time</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vZqyLv5uM9o" title="Chapter 9: Motion and Time" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Chapter 9: Motion and Time</h4>
+        </div>
+    </div>
+
+    <h1><u>Chapter 10: Electric Current and its Effects</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vDAI7e3P4Cc" title="Chapter 10: Electric Current and its Effects" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Chapter 10: Electric Current and its Effects</h4>
+        </div>
+    </div>
+
+    <h1><u>Chapter 11: Light</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Z2wr255szHY" title="Chapter 11: Light" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Chapter 11: Light</h4>
+        </div>
+    </div>
+
+    <h1><u>Chapter 12: Forest Our Lifeline</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ssNFEbkmTl4" title="Chapter 12: Forest Our Lifeline" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Chapter 12: Forest Our Lifeline</h4>
+        </div>
+    </div>
+
+    <h1><u>Chapter 13: Wastewater Story</u></h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ozlc_quFgJ8" title="Chapter 13: Wastewater Story" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4 style="text-align: center;">Chapter 13: Wastewater Story</h4>
+        </div>
+    </div>
+
+</body>
+</html>

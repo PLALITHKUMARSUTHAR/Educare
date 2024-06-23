@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduCare</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+  <style>
+    /* Adjusted carousel container */
+.carousel-container {
+    max-width: 500px; /* Adjust maximum width */
+    margin: 0 auto; /* Center the carousel */
+  }
+
+  /* Make carousel rounded */
+  .carousel-inner {
+    border-radius: 2.0rem; /* Adjust border radius as desired */
+    overflow: hidden; /* Ensure content within carousel is clipped to rounded shape */
+  }
+
+  /* Adjust carousel images size */
+  .carousel-item img {
+    max-width: 100%;
+    height: auto; /* Allow the image to resize proportionally */
+    max-height: 950px; /* Limit the maximum height of the image */
+    object-fit: cover; /* Ensure the entire carousel area is filled with the image */
+  }
+  .carousel-container {
+      max-width: 700px;
+      margin: 0 auto; /* Center the carousel */
+    }
+
+    body {
+      background-image: url('homepagebg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .feature-icon {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 0.75rem;
+    }
+
+    .navbar-nav .nav-item {
+    width: 100%; /* Ensure each nav item takes full width */
+  }
+
+  .navbar-nav .nav-link {
+    display: block;
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    color: #4169E1;
+    text-decoration: none;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #007bff; /* Change color on hover */
+    text-decoration: none; /* Remove underline on hover */
+  }
+
+    .nav-link:hover {
+      color: #007bff; /* Change color on hover */
+      text-decoration: none; /* Remove underline on hover */
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    }
+
+    .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.5); /* Toggler border color */
+    }
+
+    .navbar-collapse {
+      color: greenyellow;
+    }
+
+    /* Adjust logo size */
+    .navbar-brand img {
+      height: 40px; /* Adjust the height of the logo */
+    }
+
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .h {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    
+
+    .footer-image {
+      width: 150px; /* Reduce the size of the image */
+      height: auto;
+    }
+
+    .map-container {
+      margin-top: 10px;
+    }
+
+    .btn-outline-secondary:hover {
+      color: white;
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    
+    .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px;
+      }
+      
+      .hero-section.hero-content {
+        max-width: 600px;
+        text-align: center;
+      }
+      
+      
+      @media (max-width: 768px) {
+       .hero-section {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+  </style>
+</head>
+
+<div class="entire-site">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="homelogo.png" alt="moveit brand icon" style="padding-bottom:1px"></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-right: 20px;">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" style="color: #4169E1;"><b>Home</b></a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-left: 2px ;color: #4169E1;"><b>Course</b></a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="class.html" style="color: #4169E1;"><b>Class 7</b></a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="careerguidance.jpg" style="color: #4169E1;"><b>Career Guidance</b></a></li>
+                  </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-left: 2px ;color: #4169E1;"><b>Books</b></a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="ncert.html" style="color: #4169E1;"><b>Ncert</b></a></li>
+                      
+                      </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-left: 2px ;color: #4169E1;"><b>Blogs</b></a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Article.html" style="color: #4169E1;"><b>Articles</b></a></li>
+                  </ul>
+              </li>
+
+              <li>
+                <a class="nav-link" href="scholarships.html" style="color: #4169E1;"><b>Scholarships</b></a>
+            </li>
+          
+          
+
+              <li class="nav-item">
+                  <a class="nav-link" href="about.html" style="color: #4169E1;"><b>About</b></a>
+              </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+  
+  <div class="container-fluid d-flex justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.5); min-height: 100vh;">
+    <div class="row align-items-center">
+      <div class="col-md-3">
+        <img src="homeastronaut1.png" alt="Astronaut" class="img-fluid rounded" style="opacity: 0.8;">
+      </div>
+      <div class="col-md-6 text-center">
+        <h1 class="pb-2 border-bottom" style="color: white; font-size: 4.5rem; font-family: 'Grand Hotel', cursive;">Empower through education</h1>
+        <p class="lead mb-4" style="color: white;">
+          Welcome to our website! Our mission is to make education accessible to all. 
+          At our website, we believe that every individual deserves the opportunity to learn and grow. 
+          Join us in our commitment to providing quality education for everyone, and together, let's create a brighter future.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-4">
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4" style="color: white;border-width: 2px;">Contact Us</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <img src="homeastronaut.jpg" alt="Astronaut" class="img-fluid rounded" style="opacity: 0.8;padding-bottom: 60px;">
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h1 style="color:white;">"Transforming education through seamless tech."</h1>
+        <img src="home5.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy" style="width:550;height:450px;">
+        </div>
+    </div>
+  </div>
+  
+
+
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom" style="color:white">Eager to explore our approach and offerings?</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./briefcase.svg" alt="briefcase" height="30">
+        </div>
+        <h3 class="fs-2" style="color:white">Innovation</h3>
+        <p style="color:white">A website serves as a powerful tool to enhance learning efficiency and elevate teaching standards. 
+          By providing diverse resources and interactive platforms, it enables students to grasp complex
+           concepts with ease. Moreover, it empowers educators to deliver content in innovative ways,
+            fostering a dynamic and engaging learning environment.
+        </p>
+      </div>
+
+      <div class="feature col">
+        <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./bus-front.svg" alt="bus-front" height="30">
+        </div>
+        <h3 class="fs-2" style="color:white">Easy Access</h3>
+        <p style="color:white">Get quality education easily with our free service designed for students. 
+          We cover all the important topics in the curriculum, helping students excel
+           and reach their full potential in their studies.</p>
+      </div>
+
+      <div class="feature col">
+        <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./chat-square-heart.svg" alt="chat-square-heart" height="30">
+        </div>
+        <h3 class="fs-2" style="color:white">Personal Touch</h3>
+        <p style="color:white">Enjoy learning tailored just for you. We believe in using creative methods like visualizing subjects 
+          and using 3D graphics to help you understand even the toughest concepts effortlessly. 
+          Get ready for a new way of learning that's all about you.</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="home1.jpg" class="d-block w-100" width="200" width = "300" alt="couple">
+        </div>
+        <div class="carousel-item">
+          <img src="home2.jpg" class="d-block w-100" alt="dog">
+        </div>
+        <div class="carousel-item">
+          <img src="home3.jpg" class="d-block w-100" alt="family">
+        </div>
+        <div class="carousel-item">
+          <img src="home4.jpg" class="d-block w-100" alt="family">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <footer class="row py-5 my-5 border-top">
+      <div class="footer-content col-12">
+        <div class="footer-left">
+          <h5 class="h" style="padding-bottom:10px;padding-left:20px;color: white">Be Educated</h5>
+          <img src="homeAgastya.png" class="footer-image" alt="WE-LEARN">
+          <h6 class="h" style="padding-top: 10px;padding-left:5px;color:white">WE-LEARN APP</h6>
+        </div>
+  
+        <div class="footer-right">
+          <h6 style="padding-right:237px;color:white">Location:</h6>
+          <h6 style="color:white">Gokul Government Primary School, Hubli,<br>Karnataka, 580030</h6>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7694.922700609001!2d75.07878667047879!3d15.351480790910479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8d6be89a8ab6b%3A0x9b4dbb501395992c!2sGovernment%20Primary%20School!5e0!3m2!1sen!2sin!4v1717526777057!5m2!1sen!2sin" 
+              width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt-text="connect"></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+  <script src="app.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
